@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button.booked {
+            background-color: red;
+            cursor: not-allowed;
+        }
+    </style>
+    <script>
+        function bookSlot(button, formLink) {
+            window.open(formLink, '_blank'); // Open the Microsoft Form in a new tab
+            button.textContent = "Booked";
+            button.classList.add('booked');
+            button.disabled = true; // Disable the button after it's clicked
+        }
+    </script>
+</head>
+<body>
+    <h2>Appointment Booking (Week 3)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time Slot</th>
+                <th>Booking</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1:00 pm - 1:10 pm</td>
+                <td>Booked</td>
+            </tr>
+            <tr>
+                <td>1:10 pm - 1:20 pm</td>
+                <td>Booked</td>
+            </tr>
+            <tr>
+                <td>1:20 pm - 1:30 pm</td>
+                <td>Booked</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Appointment Booking (Week 4)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time Slot</th>
+                <th>Booking</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1:00 pm - 1:10 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:10 pm - 1:20 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:20 pm - 1:30 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+     <h2>Appointment Booking (Week 5)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time Slot</th>
+                <th>Booking</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1:00 pm - 1:10 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:10 pm - 1:20 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:20 pm - 1:30 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+        </tbody>
+    </table>
+	 
+	  <h2>Appointment Booking (Week 6)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time Slot</th>
+                <th>Booking</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1:00 pm - 1:10 pm</td>
+                <td>Booked</td>
+            </tr>
+            <tr>
+                <td>1:10 - 1:20 pm</td>
+                <td>Booked</td>
+            </tr>
+            <tr>
+                <td>1:20 pm - 1:30 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+        </tbody>
+    </table>
+	
+	 <h2>Appointment Booking (Week 7)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time Slot</th>
+                <th>Booking</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1:00 pm - 1:10 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:10 pm - 1:20 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:20 pm - 1:30 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+        </tbody>
+    </table>
+	
+	 <h2>Appointment Booking (Week 8)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time Slot</th>
+                <th>Booking</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1:00 pm - 1:10 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:10 pm - 1:20 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:20 pm - 1:30 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+        </tbody>
+    </table>
+	
+	 <h2>Appointment Booking (Week 9)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time Slot</th>
+                <th>Booking</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1:00 pm - 1:10 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:10 pm - 1:20 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:20 pm - 1:30 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+        </tbody>
+    </table>
+	
+	 <h2>Appointment Booking (Week 10)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time Slot</th>
+                <th>Booking</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1:00 pm - 1:10 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:10 pm - 1:20 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:20 pm - 1:30 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+        </tbody>
+    </table>
+	
+	 <h2>Appointment Booking (Week 11)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time Slot</th>
+                <th>Booking</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1:00 pm - 1:10 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:10 pm - 1:20 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+            <tr>
+                <td>1:20 pm - 1:30 pm</td>
+                <td><button onclick="bookSlot(this, 'https://forms.office.com/e/Dxg4877zii')">Book</button></td>
+            </tr>
+        </tbody>
+    </table>
+	
+	<!-- Repeat for more weeks -->
+</body>
+</html>
